@@ -12,6 +12,10 @@ const TodoData=mongoose.Schema({
     catogery:{
         type:String,
         required:true
+    },
+    time:{
+        type:String,
+        require:true
     }
 });
 
