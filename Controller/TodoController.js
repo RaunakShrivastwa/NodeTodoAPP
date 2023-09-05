@@ -135,3 +135,7 @@ module.exports.NowUpdate=(req,res)=>{
     })
    
 }
+
+module.exports.hallo=(req,res)=>{
+    return res.send("hallo")
+}
