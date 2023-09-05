@@ -5,7 +5,7 @@ const router= require('./Router/Router');
 const db= require('./Db/Config');
 const TodoSchema = require('./model/TodoSchema')
 
-const PORT=8000;
+const PORT= process.env.PORT || 8000;
 const app=express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
