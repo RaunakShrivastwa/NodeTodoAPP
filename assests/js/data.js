@@ -66,3 +66,8 @@ document.getElementById('add').addEventListener('click',()=>{
     toast.show();
    }
 })
+
+document.getElementsByClassName('ed').addEventListener('click',(e)=>{
+  alert("hallo")
+   document.getElementById('todoTitle').innerText='UPDATE TODO'
+})

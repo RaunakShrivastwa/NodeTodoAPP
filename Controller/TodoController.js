@@ -119,6 +119,7 @@ module.exports.editPage = function(req, res) {
 }
 
 module.exports.NowUpdate=(req,res)=>{
+    
     var id= req.query.id;
     console.log("inside NowUpdate")
     const user={
@@ -134,6 +135,15 @@ module.exports.NowUpdate=(req,res)=>{
         return
     })
    
+}
+
+module.exports.clearData=(req,res)=>{
+    TodoSchema.deleteMany({}).then(temo=>{
+        return res.redirect('/todoHome')
+    }).catch(err=>{
+            console.log(err," with delete All")
+            return
+        })
 }
 
 module.exports.hallo=(req,res)=>{

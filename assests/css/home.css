@@ -7,12 +7,12 @@
 .inner{
     width: 100% !important;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     
 }
 .list{
     height: auto !important;
-    padding: 10px;
+    /* padding: 10px; */
 }
 .form-body1{
     background-color: rgb(234, 238, 243) !important;
@@ -23,7 +23,7 @@
 }
 @media only screen and (max-width: 770px) {
     .list{
-       height: 300px !important;
+       height: 100% !important;
        overflow-y: auto;
     }
 
