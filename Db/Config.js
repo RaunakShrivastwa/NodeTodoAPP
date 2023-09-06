@@ -13,8 +13,7 @@ const mongoose = require('mongoose');
 // })
 
 
-
-
+mongoose.set('strictQuery', true);
 mongoose.connect( MONGODB_CONNECT_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
