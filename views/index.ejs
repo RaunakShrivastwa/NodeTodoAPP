@@ -63,6 +63,8 @@
                                         <label for="floatingSelectGrid"><strong>CATOGERY</strong></label>
                                     </div>
                                 </div>
+                                
+                               
                             </div>
                             <!-- third box div  for add and delete button-->
                             <div class=" mt-4 d-flex justify-content-between">
@@ -125,6 +127,13 @@
 
 
                                 </div>
+
+                                <!-- for the time -->
+                                <div class="form-floating mt-2">
+                                    <input type="time" name="time" required class="form-control border-0"
+                                        placeholder="Leave a comment here" id="floatingTextarea">
+                                    <label for="floatingTextarea">TIME <i class="fa fa-clock"></i></label>
+                                </div>
                                 <!-- third box div  for add and delete button-->
                                 <div class=" mt-4 d-flex justify-content-between">
                                     <div>
@@ -132,12 +141,6 @@
                                             <button id="add" class="btn btn-dark"><i
                                                     class="fa fa-plus m-lg-2 m-md-2 m-sm-2"></i>ADD
                                                 TASK</button>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="form-floating">
-                                            <input name="time" type="time">
                                         </div>
                                     </div>
 
@@ -167,9 +170,9 @@
                                             <div class="mt-1 form-control p-2 shadow form-body1">
                                                 <form action="">
                                                     <div>
-                                                        <div class="col-md-12 col-sm-12 row bg-danger">
+                                                        <div class="col-md-12 col-sm-12 row">
                                                             <div class="col-md-10 col-sm-9">
-                                                                <input id=<%=i.id %> type="checkbox">
+                                                                <input  id=<%=i.id %> type="checkbox">
                                                                 <label class="m-lg-3 m-md-3 m-sm-3">
                                                                     <%= i.desc %>
                                                                 </label>
